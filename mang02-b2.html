@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n = prompt('nhập độ dài mảng: ');
+  let arr = new Array('');
+  for(let i=0; i<n; i++){
+    arr[i] = prompt('nhập mảng: ');
+  }
+  let result = "";
+  for(let i=arr.length-1; i>=0; i--){
+    result += arr[i];
+  }
+  document.write(result);
+</script>
+</body>
+</html>

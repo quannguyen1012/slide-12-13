@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        let arrs = [1,5,3,10,15,21,3,7,11,19];
+        let max = arrs;
+        let result = "";
+
+        for (let i=0; i<arrs.length-1; i++){
+            if (max[i] >= 10){
+              result += max[i]+ "-";
+              console.log(result);
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

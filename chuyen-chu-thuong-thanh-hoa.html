@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3>chuyển chữ thường thành chữ viết hoa</h3>
+
+    <input placeholder="nhập chu" type="text" id="lowercase">
+    <button type="button" onclick="convert()">convert</button>
+
+    <p id="display"></p>
+
+    <script>
+      function convert(){
+        let lower = document.getElementById('lowercase').value;
+          let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+          result= [];
+
+
+        for(let i=0; i<lower.length; i++){
+          if(UPPER.indexOf(lower[i]) !== -1) {
+              result.push(lower[i].toLowerCase());
+          }else if(LOWER.indexOf(lower[i]) !== -1){
+              result.push(lower[i].toUpperCase());
+          }else{
+             result.push(lower[i]);
+          }
+      }
+          document.getElementById('display').innerHTML = result.join('');
+      }
+    </script>
+</body>
+</html>

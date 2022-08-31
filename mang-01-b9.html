@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let a = new Array('');
+    let b = new Array('');
+    let n = +prompt('nhập độ dài mạng a: ');
+    let m = +prompt('nhập độ dài mảng b: ');
+    for (let i=0;i<n;i++){
+      a[i] = +prompt('nhập mảng a: ');
+    }
+    for (let i=0; i<m; i++){
+      b[i] = +prompt('nhâp mảng b: ')
+    }
+
+    let c = a.concat(b);
+    document.write(c);
+  </script>
+</body>
+</html>

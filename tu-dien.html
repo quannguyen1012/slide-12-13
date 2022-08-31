@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>nhập từ khóa: </label>
+    <input type="text" id="key">
+    <button type="button" onclick="timKiem()">dịch</button>
+    <p id="display"></p>
+    <script>
+        function timKiem() {
+            let keyWork = document.getElementById('key').value;
+            let english = ["english", "one", "two", "three", "for", "five", "coffee"];
+            let vietnam = ["tiếng việt", "mot", "hai", "ba", "bốn", "năm", "cà phê"];
+            result = 'khong tim thay';
+
+
+            for (let i = 0; i < english.length; i++) {
+                if (english.includes(keyWork)) {
+                    result = vietnam[english.indexOf(keyWork)]
+                    console.log()
+                    break;
+                }
+            }
+            document.getElementById('display').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

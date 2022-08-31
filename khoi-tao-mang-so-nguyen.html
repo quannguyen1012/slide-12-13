@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let num = [1,4,2,6,5,7,5,3,9];
+    let max = num[0];
+
+    for (let i=1; i<num.length; i++){
+      if(max < num[i]){
+          max = num[i];
+      }
+    }
+    let result = null;
+    for(let i=0; i<num.length;i++){
+        result += num[i];
+    }
+    let d = result / num.length-1;
+    document.write("phần tử có giá trị lớn nhất la:" + max);
+    document.write("<br>"+"giá trị trung bình của phần tử là: "+ d);
+
+  </script>
+</body>
+</html>

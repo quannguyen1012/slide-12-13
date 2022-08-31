@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array('');
+    let n = +prompt('nhập vào độ dài: ');
+    for(let i=0; i<n; i++){
+      arr[i] = prompt('nhập vào số nguyên: ');
+    }
+
+    let v = prompt('nhập ký tự cần tìm: ');
+    let count=0;
+    let result = arr;
+    for(let i=0; i<arr.length; i++){
+        if(v == arr[i]){
+            arr[i] = "_";
+            count++;
+        }
+    }if(count < 1) {
+        alert("ký tự cần tìm không có trong mảng");
+    }
+    document.write(result);
+</script>
+</body>
+</html>
